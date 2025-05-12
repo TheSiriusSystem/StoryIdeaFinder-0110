@@ -1,0 +1,42 @@
+.hero-foot
+{
+    padding: 0.75rem 0;
+    border-top: 2px solid #dcd0ff;
+    background-color: rgba(224, 242, 241, 0.5);
+    backdrop-filter: blur(16px);
+
+    .container
+    {
+        display: flex;
+        justify-content: space-between;
+
+        .footer-copyright, .footer-credits
+        {
+            font-weight: $font-weight-medium;
+        }
+    }
+}
+
+@media screen and (max-width: $breakpoint-mobile)
+{
+    .hero-foot .container
+    {
+        flex-direction: column;
+
+        .footer-links
+        {
+            display: flex;
+            flex-direction: column;
+
+            .link
+            {
+                margin: 0.25rem 0;
+            }
+
+            .separator
+            {
+                display: none;
+            }
+        }
+    }
+}

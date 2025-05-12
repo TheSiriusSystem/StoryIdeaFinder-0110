@@ -1,0 +1,25 @@
+<div class="hero-foot" role="contentinfo">
+    <div class="container has-text-centered">
+        <p class="footer-copyright">
+            &copy; {{ time.Now.Year }}
+        </p>
+
+        <div class="footer-links">
+            <a class="link" href="/">
+                Home
+            </a>
+            <span class="separator" aria-hidden="true">&bull;</span>
+            <a class="link" href="/about">
+                About
+            </a>
+            <span class="separator" aria-hidden="true">&bull;</span>
+            <a class="link" href="/contact">
+                Contact
+            </a>
+        </div>
+
+        <p class="footer-credits">
+            Made with &hearts; by {{ .Site.Params.author }}
+        </p>
+    </div>
+</div>

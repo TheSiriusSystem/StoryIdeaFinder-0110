@@ -1,0 +1,17 @@
+.button
+{
+    font-family: $font-tertiary;
+    font-weight: $font-weight-medium;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+
+    &:not(.is-outlined)
+    {
+        border-color: transparent;
+    }
+
+    &.is-outlined
+    {
+        transition: border-color $animation-time-short ease, background-color $animation-time-short ease, color $animation-time-short ease;
+    }
+}

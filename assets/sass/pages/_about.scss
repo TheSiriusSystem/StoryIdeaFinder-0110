@@ -1,0 +1,61 @@
+#about
+{
+    background: linear-gradient(150deg, #f3f1ee, #e6e4e1, #f0e6f2);
+
+    .box
+    {
+        width: 50%;
+        margin-bottom: 5.0rem;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0.5rem;
+        border: 3px solid #dcdcdc;
+        background-color: #f4f5fa;
+        box-shadow: $shadow-medium;
+
+        .ai-contributor
+        {
+            display: flex;
+
+            div
+            {
+                p.mb-0
+                {
+                    font-weight: $font-weight-semi-bold;
+                    font-size: 1.375rem;
+                }
+
+                .tag
+                {
+                    font-weight: $font-weight-medium;
+                    color: $font-color-off-white;
+                }
+            }
+        }
+    }
+
+    @include back-to-home-button();
+
+    @media screen and (min-width: $breakpoint-tablet-min) and (max-width: $breakpoint-tablet)
+    {
+        .box
+        {
+            width: 75%;
+        }
+    }
+
+    @media screen and (max-width: $breakpoint-mobile)
+    {
+        .box
+        {
+            width: 100%;
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        .button
+        {
+            width: auto;
+        }
+    }
+}

@@ -1,0 +1,101 @@
+{{ define "main" }}
+    <main id="home" class="hero is-fullheight">
+        <div class="hero-body">
+            <div class="container">
+                <header class="has-text-centered">
+                    <h1 class="title is-size-1-desktop is-size-2-touch">
+                        {{ .Site.Title }}
+                    </h1>
+                    <h2 class="subtitle mb-2 is-size-2-desktop is-size-3-touch">
+                        {{ .Site.Params.homepage.subheading }}
+                    </h2>
+                    <p class="is-size-5">
+                        For the best experience, use fullscreen!
+                    </p>
+                </header>
+
+                <div class="prompt-box">
+                    <div class="box">
+                        <p class="prompt-text has-text-centered">
+                            <strong>{{ .Site.Params.homepage.tutorialText }}</strong>
+                        </p>
+                    </div>
+                    <div class="buttons is-centered">
+                        <button id="get-new-prompt-button" class="button">
+                            {{ partial "/components/button-content.html" (dict "icon" "fa-solid fa-shuffle" "text" "Get New Prompt") }}
+                        </button>
+
+                        {{/*
+                        Here, we use autocomplete="off" to prevent Firefox from persisting the dynamic
+                        disabled state of the button across page loads.
+                        */}}
+                        <button id="save-prompt-button" class="button is-outlined" autocomplete="off" disabled aria-disabled="true">
+                            {{ partial "/components/button-content.html" (dict "icon" "fa-solid fa-heart" "text" "Save Prompt") }}
+                        </button>
+                    </div>
+                </div>
+
+                <div class="buttons are-large is-centered">
+                    <a class="button" href="/contact">
+                        {{ partial "/components/button-content.html" (dict "icon" "fa-solid fa-envelope" "text" "Contact" )}}
+                    </a>
+                    <a class="button" href="/about">
+                        {{ partial "/components/button-content.html" (dict "icon" "fa-solid fa-question" "text" "About" )}}
+                    </a>
+                </div>
+
+                <div class="card">
+                    <header class="card-header">
+                        <h3 class="card-header-title title mb-0 is-size-3-desktop is-size-4-touch">
+                            Saved Prompts
+                        </h3>
+                        <button class="card-header-icon" aria-label="Clear Saved Prompts">
+                            <span class="icon">
+                                <i class="fa-solid fa-trash"></i>
+                            </span>
+                        </button>
+                    </header>
+
+                    <div id="saved-prompts-list" class="card-content"></div>
+                </div>
+            </div>
+        </div>
+
+        {{ partial "footer.html" . }}
+
+        <div class="modal">
+            <div class="modal-background"></div>
+
+            <div class="modal-card">
+                <header class="modal-card-head">
+                    <h3 class="modal-card-title title mb-0 is-size-3-desktop is-size-4-touch">
+                        Clear Saved Prompts
+                    </h3>
+                    <button class="delete" aria-label="Close"></button>
+                </header>
+
+                <section class="modal-card-body has-text-centered">
+                    <p class="is-size-5">
+                        {{ .Site.Params.homepage.clearSavedPromptsModalBodyText }}
+                    </p>
+                    <p class="is-size-6 has-text-danger">
+                        {{ .Site.Params.homepage.clearSavedPromptsModalBodySubtext }}
+                    </p>
+                </section>
+
+                <footer class="modal-card-foot">
+                    <div class="buttons">
+                        <button class="button confirm-button">
+                            Confirm
+                        </button>
+                        <button class="button">
+                            Cancel
+                        </button>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </main>
+
+    <script src="/js/home.js"></script>
+{{ end }}

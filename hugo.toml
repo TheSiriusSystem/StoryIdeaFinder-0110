@@ -1,0 +1,23 @@
+baseURL = "https://storyideafinder.netlify.app/"
+languageCode = "en-us"
+title = "StoryIdeaFinder-0110"
+
+[params]
+  author = "Alexis Vale Brooks"
+  [params.homepage]
+    subheading = "Looking for ideas or feeling curious, writer?"
+    tutorialText = "Press the \"Get New Prompt\" button to roll for creative juices."
+    clearSavedPromptsModalBodyText = "Are you sure you want to clear all saved prompts?"
+    clearSavedPromptsModalBodySubtext = "This cannot be undone!"
+  [params.aboutPage]
+    aiContributors = [
+      {name = "GPT-4o", isLocal = false, isFinetune = false},
+      {name = "Claude 3.7 Sonnet", isLocal = false, isFinetune = false},
+      {name = "Gemini 2.5 Flash", isLocal = false, isFinetune = false},
+      {name = "Gemma 3 \"Starshine\" 12B", isLocal = true, isFinetune = true},
+      {name = "Mistral NeMo \"Wayfarer\" 12B", isLocal = true, isFinetune = true},
+      {name = "Mistral NeMo \"NemoMix-Unleashed\" 12B", isLocal = true, isFinetune = true},
+    ]
+  [params.contactPage]
+    subheading = "Prompt suggestions? Inquiries? This is the right place!"
+    promptSubmissionNotice = "Writing prompts will be checked against existing ones (community contributions included) for similarities to avoid polluting the pool."

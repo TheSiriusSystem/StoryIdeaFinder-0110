@@ -1,0 +1,8 @@
+{{ if and .icon (ne .icon "") }}
+    <span class="icon">
+        <i class="{{ .icon }}" aria-hidden="true"></i>
+    </span>
+{{ end }}
+{{ if and .text (ne .text "") }}
+    <span>{{ .text }}</span>
+{{ end }}

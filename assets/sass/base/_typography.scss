@@ -1,0 +1,40 @@
+// Sets the font and font color of most content on the site. Keyword: most. This
+// doesn't always do its thing so elements have to be targeted later on to ensure
+// they receive their intended properties.
+body
+{
+    font-family: $font-secondary;
+    color: $font-color-black;
+}
+
+h1, h2, h3, h4, h5, h6, legend
+{
+    font-family: $font-primary;
+    color: $font-color-licorice;
+}
+
+p, blockquote
+{
+    color: $font-color-black;
+}
+
+strong, label
+{
+    color: $font-color-charcoal;
+}
+
+input, textarea, select, optgroup
+{
+    font-family: $font-secondary;
+    color: $font-color-black !important;
+}
+
+::placeholder
+{
+    color: $font-color-grey !important;
+}
+
+.title, .subtitle
+{
+    color: $font-color-licorice;
+}

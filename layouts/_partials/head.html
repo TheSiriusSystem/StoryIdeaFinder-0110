@@ -1,0 +1,7 @@
+<head>
+    {{ partial "meta.html" . }}
+    <title>{{ .Site.Title }}{{ with .Page.Title }}{{ if ne (trim . " ") "" }} | {{ . }}{{ end }}{{ end }}</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+    {{ $styles := resources.Get "sass/main.scss" | toCSS | minify }}
+    <link rel="stylesheet" href="{{ $styles.Permalink }}">
+</head>

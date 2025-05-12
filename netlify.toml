@@ -1,0 +1,15 @@
+[build]
+  publish = "public"
+  command = "hugo --gc --minify"
+
+[build.environment]
+  HUGO_VERSION = "0.147.3"
+
+[[plugins]]
+package = "netlify-plugin-checklinks"
+
+[[plugins]]
+package = "netlify-plugin-submit-sitemap"
+
+[[plugins]]
+package = "netlify-plugin-lighthouse"

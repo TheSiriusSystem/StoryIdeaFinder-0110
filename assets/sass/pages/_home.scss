@@ -1,0 +1,253 @@
+$large-button-width-desktop: 350px;
+$large-button-width-mobile: 100%;
+$saved-prompts-list-height: 200px;
+$saved-prompts-list-header-height: 50px;
+
+#home
+{
+    background: linear-gradient(150deg, #faf8f5, #f5f3ef, #eae6f2);
+
+    header p.is-size-5
+    {
+        display: none;
+    }
+
+    .prompt-box
+    {
+        width: 50%;
+        margin: 5.0rem auto;
+
+        .box
+        {
+            height: 150px;
+            box-shadow: $shadow-medium;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .prompt-text
+            {
+                font-size: 1.625rem;
+            }
+        }
+
+        .buttons .button
+        {
+            width: 300px;
+            margin: 0 0.875rem;
+            border-radius: 8px;
+            font-weight: $font-weight-bold;
+            font-size: 1.25rem;
+            box-shadow: $shadow-light;
+
+            &:not(.is-outlined)
+            {
+                background-color: #7851a9;
+                color: $font-color-white;
+
+                &:hover
+                {
+                    background-color: darken(#7851a9, 10%);
+                }
+            }
+
+            &.is-outlined
+            {
+                border-color: #4a4a4a;
+                color: #4a4a4a;
+
+                &:hover:enabled
+                {
+                    background-color: rgba(0, 0, 0, 0.15);
+                }
+            }
+        }
+    }
+
+    .buttons.are-large.is-centered
+    {
+        width: $large-button-width-desktop;
+        margin: 0 auto;
+
+        .button
+        {
+            width: $large-button-width-desktop;
+            border-radius: 16px;
+            background-color: #f4f5fa;
+            color: $font-color-black;
+            box-shadow: $shadow-light;
+
+            &:hover
+            {
+                background-color: darken(#f4f5fa, 5%);
+            }
+        }
+    }
+
+    .card
+    {
+        width: 66%;
+        height: $saved-prompts-list-height;
+        margin-top: 4.0rem;
+        margin-left: auto;
+        margin-right: auto;
+
+        .card-header
+        {
+            height: $saved-prompts-list-header-height;
+            background-color: #f5f5f5;
+
+            .card-header-title
+            {
+                word-wrap: break-word;
+            }
+
+            .card-header-icon
+            {
+                transition: transform $animation-time-short ease;
+
+                &:hover
+                {
+                    transform: scale(1.1);
+                }
+            }
+        }
+
+        .card-content
+        {
+            height: $saved-prompts-list-height - $saved-prompts-list-header-height;
+            padding: 0.5rem;
+            overflow-y: auto;
+        }
+    }
+
+    .modal
+    {
+        .modal-background
+        {
+            background-color: rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(6px);
+        }
+
+        .modal-card
+        {
+            box-shadow: $shadow-heavy;
+
+            .modal-card-head
+            {
+                height: 60px;
+                background-color: #f8f8ff;
+            }
+
+            .modal-card-body p.is-size-6
+            {
+                font-weight: $font-weight-semi-bold;
+                font-style: italic;
+            }
+
+            .modal-card-foot
+            {
+                background-color: #fffafa;
+
+                .buttons .button
+                {
+                    &.confirm-button
+                    {
+                        background-color: #c92c48;
+                        font-weight: $font-weight-semi-bold;
+                        color: $font-color-white;
+
+                        &:hover
+                        {
+                            background-color: darken(#c92c48, 10%);
+                        }
+                    }
+
+                    &:not(.confirm-button)
+                    {
+                        background-color: #f4f5fa;
+                        color: $font-color-black;
+
+                        &:hover
+                        {
+                            background-color: darken(#f4f5fa, 5%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: $breakpoint-desktop)
+    {
+        header p.is-size-5
+        {
+            display: inline;
+        }
+    }
+
+    @media screen and (min-width: $breakpoint-tablet-min) and (max-width: $breakpoint-tablet)
+    {
+        .prompt-box
+        {
+            width: 90%;
+
+            .box .prompt-text
+            {
+                font-size: 1.5rem;
+            }
+
+            .buttons .button
+            {
+                width: 275px;
+                font-size: 1.125rem;
+            }
+        }
+
+        .card
+        {
+            width: 80%;
+        }
+    }
+
+    @media screen and (max-width: $breakpoint-mobile)
+    {
+        .prompt-box
+        {
+            width: 100%;
+
+            .box
+            {
+                height: 300px;
+
+                .prompt-text
+                {
+                    font-size: 1.5rem;
+                }
+            }
+
+            .buttons .button
+            {
+                width: 100%;
+                margin: 0.5rem 0;
+            }
+        }
+
+        .buttons.are-large.is-centered
+        {
+            width: $large-button-width-mobile;
+
+            .button
+            {
+                width: $large-button-width-mobile;
+            }
+        }
+
+        .card
+        {
+            width: 100%;
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+}
