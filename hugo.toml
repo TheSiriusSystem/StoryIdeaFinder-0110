@@ -4,6 +4,12 @@ title = "StoryIdeaFinder-0110"
 
 [params]
   author = "Alexis Vale Brooks"
+  description = "A creative writing prompt generator whose purpose is to ignite that spark within your writer spirit, providing you with ideas."
+  keywords = "writing prompts, creative writing, story ideas, fiction prompts, character prompts, plot ideas"
+  [params.socialMediaMeta]
+    image = "https://storyideafinder.netlify.app/images/featured.jpg"
+    openGraphAuthor = "https://www.facebook.com/SoftwareEngineerBlake/"
+    XCreator = "@TheSiriusSystem"
   [params.homepage]
     subheading = "Looking for ideas or feeling curious, writer?"
     tutorialText = "Press the \"Get New Prompt\" button to roll for creative juices."
