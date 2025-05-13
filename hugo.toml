@@ -29,7 +29,7 @@ title = "StoryIdeaFinder-0110"
     ]
 
   [params.contactPage]
-    subheading = "Prompt suggestions? Inquiries? This is the right place!"
+    subheading = "Prompt suggestions? Inquiries? You're in the right place!"
     promptSubmissionNotice = "Writing prompts will be checked against existing ones (community contributions included) for similarities to avoid polluting the pool."
 
 [services]
