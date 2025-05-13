@@ -6,15 +6,18 @@ title = "StoryIdeaFinder-0110"
   author = "Alexis Vale Brooks"
   description = "A creative writing prompt generator whose purpose is to ignite that spark within your writer spirit, providing you with ideas."
   keywords = "writing prompts, creative writing, story ideas, fiction prompts, character prompts, plot ideas"
+
   [params.socialMediaMeta]
-    image = "https://storyideafinder.netlify.app/images/featured.jpg"
-    openGraphAuthor = "https://www.facebook.com/SoftwareEngineerBlake/"
-    XCreator = "@TheSiriusSystem"
+    image = "images/open-graph-image.jpg"
+    twitterSite = "@TheSiriusSystem"
+    twitterCreator = "@TheSiriusSystem"
+
   [params.homepage]
     subheading = "Looking for ideas or feeling curious, writer?"
     tutorialText = "Press the \"Get New Prompt\" button to roll for creative juices."
     clearSavedPromptsModalBodyText = "Are you sure you want to clear all saved prompts?"
     clearSavedPromptsModalBodySubtext = "This cannot be undone!"
+
   [params.aboutPage]
     aiContributors = [
       {name = "GPT-4o", isLocal = false, isFinetune = false},
@@ -24,6 +27,7 @@ title = "StoryIdeaFinder-0110"
       {name = "Mistral NeMo \"Wayfarer\" 12B", isLocal = true, isFinetune = true},
       {name = "Mistral NeMo \"NemoMix-Unleashed\" 12B", isLocal = true, isFinetune = true},
     ]
+
   [params.contactPage]
     subheading = "Prompt suggestions? Inquiries? This is the right place!"
     promptSubmissionNotice = "Writing prompts will be checked against existing ones (community contributions included) for similarities to avoid polluting the pool."

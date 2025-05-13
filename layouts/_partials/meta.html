@@ -1,34 +1,33 @@
+{{ $siteImage := printf "%s%s" .Permalink .Site.Params.socialMediaMeta.image }}
+
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#000000">
 
-{{/* SEO Tags */}}
+{{/* SEO */}}
 <meta name="title" content="{{ .Site.Title }}">
 <meta name="description" content="{{ .Site.Params.description }}">
 <meta name="keywords" content="{{ .Site.Params.keywords }}">
 <meta name="author" content="{{ .Site.Params.author }}">
 <link rel="canonical" href="{{ .Site.BaseURL }}">
 
-{{/* Open Graph Tags */}}
-<meta property="og:type" content="article">
+{{/* Open Graph */}}
+<meta property="og:type" content="website">
 <meta property="og:url" content="{{ .Permalink }}">
 <meta property="og:title" content="{{ .Site.Title }}">
 <meta property="og:description" content="{{ .Site.Params.description }}">
-<meta property="og:image" content="{{ .Site.Params.socialMediaMeta.image }}">
-<meta property="og:image:alt" content="{{ .Site.Title }}">
+<meta property="og:image" content="{{ $siteImage }}">
 <meta property="og:site_name" content="{{ .Site.Title }}">
-<meta property="article:author" content="{{ .Site.Params.socialMediaMeta.openGraphAuthor }}">
 
-{{/* LinkedIn Tags */}}
+{{/* LinkedIn */}}
 <meta name="title" property="og:title" content="{{ .Site.Title }}">
 <meta name="description" property="og:description" content="{{ .Site.Params.description }}">
-<meta name="image" property="og:image" content="{{ .Site.Params.image }}">
+<meta name="image" property="og:image" content="{{ $siteImage }}">
 
-{{/* X Tags */}}
+{{/* X */}}
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="{{ .Site.Params.socialMediaMeta.XCreator }}">
-<meta name="twitter:creator" content="{{ .Site.Params.socialMediaMeta.XCreator }}">
+<meta name="twitter:site" content="{{ .Site.Params.socialMediaMeta.twitterSite }}">
+<meta name="twitter:creator" content="{{ .Site.Params.socialMediaMeta.twitterCreator }}">
 <meta name="twitter:title" content="{{ .Site.Title }}">
 <meta name="twitter:description" content="{{ .Site.Params.description }}">
-<meta name="twitter:image" content="{{ .Site.Params.socialMediaMeta.image }}">
-<meta name="twitter:image:alt" content="{{ .Site.Title }}">
+<meta name="twitter:image" content="{{ $siteImage }}">
