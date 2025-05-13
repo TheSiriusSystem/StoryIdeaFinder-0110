@@ -74,7 +74,6 @@ $saved-prompts-list-header-height: 50px;
             width: $large-button-width-desktop;
             border-radius: 16px;
             background-color: #f4f5fa;
-            color: $font-color-black;
             box-shadow: $shadow-light;
 
             &:hover
@@ -166,7 +165,6 @@ $saved-prompts-list-header-height: 50px;
                     &:not(.confirm-button)
                     {
                         background-color: #f4f5fa;
-                        color: $font-color-black;
 
                         &:hover
                         {
