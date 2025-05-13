@@ -4,10 +4,19 @@
     {
         width: 400px;
         background-color: #f9f6ee;
+        box-shadow: $shadow-light;
 
         &:hover
         {
             background-color: darken(#f9f6ee, 5%);
+        }
+    }
+
+    @media screen and (max-width: $breakpoint-mobile)
+    {
+        .home-button
+        {
+            width: auto;
         }
     }
 }
