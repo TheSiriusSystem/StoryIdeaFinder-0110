@@ -12,10 +12,7 @@
                         This is a random creative writing prompt generator—well, not actually a generator but it works like one. The purpose of this website is to get those creative juices flowing within <strong>story writers</strong>. Whether you're an <strong>aspiring novelist</strong>, a <strong>seasoned writer</strong> working through a block, or simply someone who enjoys creative expression, our randomized prompts can help jumpstart your imagination.
                     </p>
                     <p>
-                        While at least three prompts were created by <strong>{{ .Site.Params.author }}</strong> and we offer the ability to contribute custom prompts, <abbr>LMs</abbr> (language models) were primarily used to generate prompts.
-                    </p>
-                    <p>
-                        The following <abbr>LMs</abbr> were used:
+                        While at least three prompts are <em>human-made</em>, <abbr>LMs</abbr> (language models) were primarily used to generate prompts; the following <abbr>LMs</abbr> were used:
                     </p>
                 </div>
                 <div class="box">
@@ -38,6 +35,9 @@
                         </div>
                     {{ end }}
                 </div>
+                <p class="mt-5 mb-6 is-size-5-desktop is-size-6-touch has-text-centered">
+                    <strong>{{ .Site.Title }}</strong> was built with <a class="link" href="https://gohugo.io/">Hugo</a>, <a class="link" href="https://bulma.io/">Bulma</a>, and <a class="link" href="https://fontawesome.com/">Font Awesome</a>. It was designed and developed by <strong>{{ .Site.Params.author }}</strong>. Click <a class="link" href="https://github.com/TheSiriusSystem/StoryIdeaFinder-0110/">here</a> to see the source code.
+                </p>
 
                 <div class="has-text-centered">
                     <a class="button home-button is-large is-rounded" href="/">
