@@ -1,11 +1,24 @@
 {{ define "main" }}
-    <section id="page-404" class="hero is-fullheight is-primary">
+    <main id="page-404" class="hero is-fullheight">
         <div class="hero-body">
             <div class="container has-text-centered">
+                <header>
+                    <h1 class="title is-size-1-desktop is-size-2-touch">
+                        Error
+                    </h1>
+                    <h2 class="subtitle is-size-2-desktop is-size-3-touch">
+                        Analysis: Page Not Found 
+                    </h2>
+                </header>
+
+                <p class="is-size-5">
+                    Whoops! It looks like you walked off the path of creativity. However, you can still continue on with your business!
+                </p>
+
                 <a class="button home-button is-large is-rounded" href="/">
                     {{ partial "components/button-content.html" (dict "icon" "fa-solid fa-house" "text" "Back To Home") }}
                 </a>
             </div>
         </div>
-    </section>
+    </main>
 {{ end }}
