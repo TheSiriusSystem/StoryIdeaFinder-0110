@@ -20,6 +20,7 @@ $saved-prompts-list-header-height: 50px;
         .box
         {
             height: 150px;
+            background-color: #fff;
             box-shadow: $shadow-medium;
             display: flex;
             justify-content: center;
@@ -117,6 +118,7 @@ $saved-prompts-list-header-height: 50px;
             height: $saved-prompts-list-height - $saved-prompts-list-header-height;
             padding: 0.5rem;
             overflow-y: auto;
+            background-color: #fff;
         }
     }
 
@@ -138,10 +140,15 @@ $saved-prompts-list-header-height: 50px;
                 background-color: #f8f8ff;
             }
 
-            .modal-card-body p.is-size-6
+            .modal-card-body
             {
-                font-weight: $font-weight-semi-bold;
-                font-style: italic;
+                background-color: #fff;
+
+                p.is-size-6
+                {
+                    font-weight: $font-weight-semi-bold;
+                    font-style: italic;
+                }
             }
 
             .modal-card-foot

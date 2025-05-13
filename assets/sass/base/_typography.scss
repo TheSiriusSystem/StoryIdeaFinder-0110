@@ -13,14 +13,19 @@ h1, h2, h3, h4, h5, h6, legend
     color: $font-color-licorice;
 }
 
-p, i, em, blockquote
+p, em, blockquote
 {
     color: $font-color-black;
 }
 
-strong, label
+strong
 {
     color: $font-color-charcoal;
+}
+
+label
+{
+    color: $font-color-charcoal !important;
 }
 
 input, textarea, select, optgroup

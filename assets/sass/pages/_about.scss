@@ -17,6 +17,11 @@
         {
             display: flex;
 
+            .icon i
+            {
+                color: $font-color-black;
+            }
+
             div
             {
                 p.mb-0

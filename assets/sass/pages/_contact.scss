@@ -9,6 +9,11 @@
         border: 3px solid #e5e4e2;
         background-color: #f5f5f5;
         box-shadow: $shadow-medium;
+
+        input, textarea
+        {
+            background-color: #fff;
+        }
     }
 
     .notification
