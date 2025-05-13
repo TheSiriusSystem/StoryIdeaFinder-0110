@@ -15,7 +15,7 @@
 
     @include back-to-home-button();
 
-    @media screen and (min-width: $breakpoint-tablet-min) and (max-width: $breakpoint-tablet)
+    @include tablet()
     {
         p.is-size-5
         {
@@ -23,9 +23,9 @@
         }
     }
 
-    @media screen and (max-width: $breakpoint-mobile)
+    @include mobile()
     {
-        p.mb-6.is-size-5
+        p.is-size-5
         {
             width: 100%;
             margin-left: 0;

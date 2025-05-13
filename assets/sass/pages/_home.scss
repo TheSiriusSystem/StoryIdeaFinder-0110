@@ -183,7 +183,7 @@ $saved-prompts-list-header-height: 50px;
         }
     }
 
-    @media screen and (min-width: $breakpoint-desktop)
+    @include desktop()
     {
         header p.is-size-5
         {
@@ -191,7 +191,7 @@ $saved-prompts-list-header-height: 50px;
         }
     }
 
-    @media screen and (min-width: $breakpoint-tablet-min) and (max-width: $breakpoint-tablet)
+    @include tablet()
     {
         .prompt-box
         {
@@ -215,7 +215,7 @@ $saved-prompts-list-header-height: 50px;
         }
     }
 
-    @media screen and (max-width: $breakpoint-mobile)
+    @include mobile()
     {
         .prompt-box
         {

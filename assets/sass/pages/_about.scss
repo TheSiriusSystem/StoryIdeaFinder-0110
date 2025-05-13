@@ -41,7 +41,7 @@
 
     @include back-to-home-button();
 
-    @media screen and (min-width: $breakpoint-tablet-min) and (max-width: $breakpoint-tablet)
+    @include tablet()
     {
         .box
         {
@@ -49,7 +49,7 @@
         }
     }
 
-    @media screen and (max-width: $breakpoint-mobile)
+    @include mobile()
     {
         .box
         {
