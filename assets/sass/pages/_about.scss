@@ -5,9 +5,7 @@
     .box
     {
         width: 50%;
-        margin-bottom: 5.0rem;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 0 auto;
         padding: 0.5rem;
         border: 3px solid #dcdcdc;
         background-color: #f4f5fa;
@@ -39,11 +37,15 @@
         }
     }
 
-    @include back-to-home-button();
+    p.mt-5.is-size-5-desktop.is-size-6-touch.has-text-centered
+    {
+        width: 50%;
+        margin: 0 auto;
+    }
 
     @include tablet()
     {
-        .box
+        .box, p.mt-5.is-size-5-desktop.is-size-6-touch.has-text-centered
         {
             width: 75%;
         }
@@ -51,11 +53,10 @@
 
     @include mobile()
     {
-        .box
+        .box, p.mt-5.is-size-5-desktop.is-size-6-touch.has-text-centered
         {
             width: 100%;
-            margin-left: 0;
-            margin-right: 0;
+            margin: 0;
         }
     }
 }

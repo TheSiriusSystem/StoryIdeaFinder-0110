@@ -13,8 +13,6 @@
         margin: 3.5rem auto;
     }
 
-    @include back-to-home-button();
-
     @include tablet()
     {
         p.is-size-5

@@ -29,23 +29,3 @@
         @content;
     }
 }
-
-@mixin back-to-home-button()
-{
-    .home-button
-    {
-        width: 400px;
-        background-color: #f9f6ee;
-        box-shadow: $shadow-light;
-
-        &:hover
-        {
-            background-color: darken(#f9f6ee, 5%);
-        }
-
-        @include mobile()
-        {
-            width: auto;
-        }
-    }
-}

@@ -6,6 +6,23 @@
     letter-spacing: 0.1rem;
     color: $font-color-black;
 
+    &.home-button
+    {
+        width: 400px;
+        background-color: #f9f6ee;
+        box-shadow: $shadow-light;
+
+        &:hover
+        {
+            background-color: darken(#f9f6ee, 5%);
+        }
+
+        @include mobile()
+        {
+            width: auto;
+        }
+    }
+
     &:not(.is-outlined)
     {
         border-color: transparent;

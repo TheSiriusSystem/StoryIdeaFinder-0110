@@ -30,8 +30,6 @@
         }
     }
 
-    @include back-to-home-button();
-
     @include tablet()
     {
         .box

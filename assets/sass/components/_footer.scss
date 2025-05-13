@@ -14,28 +14,25 @@
         {
             font-weight: $font-weight-medium;
         }
-    }
-}
 
-@media screen and (max-width: $breakpoint-mobile)
-{
-    .hero-foot .container
-    {
-        flex-direction: column;
-
-        .footer-links
+        @include mobile()
         {
-            display: flex;
             flex-direction: column;
 
-            .link
+            .footer-links
             {
-                margin: 0.25rem 0;
-            }
+                display: flex;
+                flex-direction: column;
 
-            .separator
-            {
-                display: none;
+                .link
+                {
+                    margin: 0.25rem 0;
+                }
+
+                .separator
+                {
+                    display: none;
+                }
             }
         }
     }

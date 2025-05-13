@@ -7,20 +7,40 @@ body
     color: $font-color-black;
 }
 
-h1, h2, h3, h4, h5, h6, legend
+h1, h2, h3, h4, h5, h6
 {
     font-family: $font-primary;
-    color: $font-color-licorice;
+    color: $font-color-black;
 }
 
-p, em, blockquote
+p, .title, .subtitle
 {
     color: $font-color-black;
 }
 
 strong
 {
+    font-weight: $font-weight-bold;
     color: $font-color-charcoal;
+}
+
+em
+{
+    font-style: italic;
+    color: $font-color-charcoal;
+}
+
+mark
+{
+    padding: 0 0.375rem;
+    background-color: #fff9c4;
+    color: $font-color-licorice;
+}
+
+pre, code
+{
+    font-family: $font-tertiary;
+    color: $font-color-black;
 }
 
 label
@@ -37,9 +57,4 @@ input, textarea, select, optgroup
 ::placeholder
 {
     color: $font-color-grey !important;
-}
-
-.title, .subtitle
-{
-    color: $font-color-licorice;
 }
