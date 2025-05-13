@@ -222,7 +222,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (saved.length === 0)
         {
-            savedPromptsList.innerHTML = '<p class="is-size-5">No prompts saved yet.</p>';
+            savedPromptsList.innerHTML = "<p class=\"is-size-5\">No prompts saved yet.</p>";
         }
         else
         {

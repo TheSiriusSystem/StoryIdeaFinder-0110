@@ -15,16 +15,16 @@
                     <form action="https://formspree.io/f/xeoojbzo" method="post">
                         <div class="field columns">
                             <div class="column is-6">
-                                {{ partial "/components/form-input.html" (dict "label" "Name" "id" "name" "type" "text" "placeholderText" "John Doe") }}
+                                {{ partial "components/form-input.html" (dict "label" "Name" "id" "name" "type" "text" "placeholderText" "John Doe") }}
                             </div>
 
                             <div class="column is-6">
-                                {{ partial "/components/form-input.html" (dict "label" "Email Address" "id" "email" "type" "email" "placeholderText" "janedoe@gmail.com") }}
+                                {{ partial "components/form-input.html" (dict "label" "Email Address" "id" "email" "type" "email" "placeholderText" "janedoe@gmail.com") }}
                             </div>
                         </div>
 
                         <div class="field">
-                            {{ partial "/components/form-input.html" (dict "label" "Subject" "id" "subject" "type" "text" "placeholderText" "Your subject") }}
+                            {{ partial "components/form-input.html" (dict "label" "Subject" "id" "subject" "type" "text" "placeholderText" "Your subject") }}
                         </div>
 
                         <div class="field">
@@ -40,7 +40,7 @@
                         <div class="field has-text-centered">
                             <div class="control">
                                 <button type="submit" class="button is-link">
-                                    {{ partial "/components/button-content.html" (dict "icon" "fa-solid fa-paper-plane" "text" "Send Message") }}
+                                    {{ partial "components/button-content.html" (dict "icon" "fa-solid fa-paper-plane" "text" "Send Message") }}
                                 </button>
                             </div>
                         </div>
@@ -58,7 +58,7 @@
 
                 <div class="has-text-centered">
                     <a class="button home-button is-large is-rounded" href="/">
-                        {{ partial "/components/button-content.html" (dict "icon" "fa-solid fa-house" "text" "Back To Home") }}
+                        {{ partial "components/button-content.html" (dict "icon" "fa-solid fa-house" "text" "Back To Home") }}
                     </a>
                 </div>
             </div>
