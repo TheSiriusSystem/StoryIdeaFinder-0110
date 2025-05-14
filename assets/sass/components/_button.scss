@@ -26,6 +26,7 @@
     &:not(.is-outlined)
     {
         border-color: transparent;
+        transition: background-color $animation-time-short ease, color $animation-time-short ease;
     }
 
     &.is-outlined
