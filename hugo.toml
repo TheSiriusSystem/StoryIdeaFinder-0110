@@ -2,6 +2,8 @@ baseURL = "https://storyideafinder.netlify.app/"
 languageCode = "en-us"
 title = "StoryIdeaFinder-0110"
 
+[taxonomies]
+
 [params]
   author = "Alexis Vale Brooks"
   description = "A creative writing prompt generator whose purpose is to ignite that spark within your writer spirit, providing you with ideas."
